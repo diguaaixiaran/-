@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>潘捷小姐，你的相亲对象颜值如何？</title>
+    <style>
+        /* 清除内外边距 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            background: url('images/background.jpg') no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+
+        /* 清除下划线 */
+        a {
+            text-decoration: none;
+        }
+
+        /* 主盒子 */
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 900px;
+            height: 300px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, .6);
+            margin: 200px auto;
+            text-align: center;
+        }
+
+        /* 移动端适配 */
+        @media screen and (max-width:768px) {
+
+            body,
+            html {
+                background: url('images/mobile.png') no-repeat;
+                background-size: 100% 100%;
+                background-attachment: fixed;
+            }
+
+            .box {
+                width: 350px;
+                height: 300px;
+            }
+
+            .box h1 {
+                font-size: 18px !important;
+            }
+        }
+
+        /* 小盒子 */
+        .box h1 {
+            margin-top: -20px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: blue;
+            font-size: 25px;
+        }
+
+        .box span {
+            margin-top: 15px;
+        }
+
+        .box span a {
+            display: block;
+            width: 350px;
+            height: 80px;
+            line-height: 80px;
+            border: 1px solid #aaa;
+            color: #000;
+        }
+
+        .box span a:hover {
+            background-color: #aaa;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>潘捷小姐，请问你的相亲对象颜值如何？</h1>
+        <span>
+            <a href="result1.html">都丑的一比，没什么好说的吧🤭</a>
+        </span>
+        <span>
+            <a href="result2.html">好像还是有五官端正的😄</a>
+        </span>
+    </div>
+</body>
+
+</html>
